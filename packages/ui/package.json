@@ -39,7 +39,7 @@
 		"svelte-sonner": "catalog:",
 		"tailwindcss": "catalog:",
 		"tw-animate-css": "^1.3.5",
-		"typescript": "^5.7.3",
+		"typescript": "catalog:",
 		"vaul-svelte": "^0.3.2"
 	}
 }

@@ -7,7 +7,7 @@ import {
   ENV_KEY_TEMPORAL_NAMESPACE,
   DEFAULT_TEMPORAL_NAMESPACE,
 } from '@boilerplate/common';
-import { getConnectionOptions } from '@boilerplate/temporalio';
+import { getConnectionOptions } from '@boilerplate/durable-execution';
 import { getWorkflowOptions, withOptionalStatusServer } from './env';
 import * as activities from './sharable-activities';
 import { DefaultLogger, NativeConnection, Runtime, Worker, makeTelemetryFilterString } from '@temporalio/worker';
@@ -16,6 +16,7 @@ import {
   OpenTelemetryActivityOutboundInterceptor,
   makeWorkflowExporter,
 } from '@temporalio/interceptors-opentelemetry/lib/worker';
+import { createDrizzleActivites, DrizzleClient } from '@boilerplate/database';
 
 const winstonLogger = createLogger({
   isProduction: process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'preview',
@@ -54,6 +55,12 @@ async function run() {
     const connection = await NativeConnection.connect(connectionOptions);
     const namespace = getEnv(env, ENV_KEY_TEMPORAL_NAMESPACE, DEFAULT_TEMPORAL_NAMESPACE);
 
+    /* Activities Dependency Injection */
+
+    // Drizzle
+    const DATABASE_URL = getEnv(env, 'DATABASE_URL');
+    const drizzleClient = new DrizzleClient(DATABASE_URL);
+
     const workers: Worker[] = await Promise.all([
       // General
       Worker.create({
@@ -62,6 +69,7 @@ async function run() {
         taskQueue: GENERAL_TASK_QUEUE,
         activities: {
           ...activities,
+          ...createDrizzleActivites(drizzleClient)
         },
         ...getWorkflowOptions(),
         sinks: traceExporter && {

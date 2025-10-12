@@ -21,12 +21,19 @@ In order to *run* this project you will need to have the following services:
 
 - [Temporal Server](https://docs.temporal.io/cli#start-dev-server)
 
-## Setup
+## Local Development
 
 Run the following commands:
 1. pnpm install
 1. docker compose up -d postgres
 1. pnpm run dev
+1. pnpm run dev:zero-cache
+
+## Production
+
+After deploying apps to production, you also want to execute the following command:
+
+1. pnpm run prod:zero-deploy
 
 ### (Optional) Docker Compose
 

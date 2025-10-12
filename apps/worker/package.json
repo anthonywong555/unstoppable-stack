@@ -26,6 +26,7 @@
   "dependencies": {
     "@boilerplate/common": "workspace:*",
     "@boilerplate/durable-execution": "workspace:*",
+    "@boilerplate/database": "workspace:*",
     "@opentelemetry/core": "^1.30.0",
     "@opentelemetry/exporter-prometheus": "^0.57.0",
     "@opentelemetry/resources": "^1.30.0",
@@ -53,6 +54,6 @@
     "nodemon": "^3.1.10",
     "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.0.0"
+    "typescript": "catalog:"
   }
 }
