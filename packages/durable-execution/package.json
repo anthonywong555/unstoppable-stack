@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@boilerplate/tsconfig": "workspace:*",
-    "eslint": "^9.33.0",
+    "eslint": "catalog:",
     "tsup": "catalog:",
     "@temporalio/interceptors-opentelemetry": "catalog:",
     "typescript": "catalog:"

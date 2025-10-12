@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@boilerplate/tsconfig": "workspace:*",
-    "eslint": "^9.33.0",
+    "eslint": "catalog:",
     "tsup": "catalog:",
     "typescript": "catalog:"
   }

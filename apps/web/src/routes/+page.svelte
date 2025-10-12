@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Button } from '@boilerplate/ui/button';
+	import { Spinner } from "@boilerplate/ui/spinner";
 	import { PersistedState } from "runed";
  
 	const count = new PersistedState("count", 0);
@@ -13,3 +14,5 @@
 	<Button onclick={() => (count.current = 0)}>Reset</Button>
 	<p>Count: {count.current}</p>
 </div>
+
+<Spinner />
