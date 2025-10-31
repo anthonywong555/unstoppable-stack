@@ -1,4 +1,4 @@
-# un-STToPZ-pable Stack
+# un-STToPZ-paDle Stack
 
 Goal: *Be willing to spin up infra to have a faster developer experience.*
 
