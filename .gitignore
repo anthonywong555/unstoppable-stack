@@ -35,7 +35,8 @@ dist
 
 /docker/meta
 
-/zero/*
-!/zero/README.md
+!/apps/sync-engine-server/db/*
+!/apps/sync-engine-server/db/README.md
+
 
 packages/local-first/src/zero-schema.gen.ts

@@ -1,5 +1,5 @@
 {
-  "name": "@boilerplate/local-first",
+  "name": "@boilerplate/sync-engine",
   "version": "1.0.0",
   "license": "MIT",
   "main": "./dist/index.js",
