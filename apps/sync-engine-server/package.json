@@ -1,0 +1,17 @@
+{
+	"name": "@boilerplate/sync-engine-server",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+        "dev": "zero-cache-dev",
+        "deploy": "zero-deploy-permissions",
+		"clean": "rm -rf ./.turbo node_modules && find db -maxdepth 1 -type f ! -name 'README.md' -delete"
+	},
+    "trustedDependencies": [
+        "@rocicorp/zero-sqlite3"
+    ],
+	"dependencies": {
+		"@rocicorp/zero": "catalog:"
+	}
+}

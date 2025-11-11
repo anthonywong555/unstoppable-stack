@@ -27,13 +27,13 @@ Run the following commands:
 1. pnpm install
 1. docker compose up -d postgres
 1. pnpm run dev
-1. pnpm run dev:zero-cache
 
 ## Production
 
 After deploying apps to production, you also want to execute the following command:
 
-1. pnpm run prod:zero-deploy
+1. cd apps/sync-engine-server
+1. pnpm run deploy
 
 ### (Optional) Docker Compose
 

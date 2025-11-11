@@ -25,7 +25,9 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./docker:/docker-entrypoint-initdb.d
     networks:
-      - home-network
+      home-network:
+        aliases:
+          - postgres.unstoppable
   web:
     container_name: web-boilerplate
     platform: linux/amd64
