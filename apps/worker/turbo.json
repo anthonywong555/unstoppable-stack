@@ -5,7 +5,7 @@
   ],
   "tasks": {
     "build:code": {
-      "cache": false
+      "dependsOn": ["^build:code"]
     },
     "build:workflows": {
       "dependsOn": ["build:code"],

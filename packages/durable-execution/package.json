@@ -6,23 +6,23 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "clean": "rm -rf ./dist node_modules .turbo",
     "dev": "npm run build --watch",
-    "build": "tsup index.ts base/index.ts --format cjs,esm --dts --outDir dist",
+    "build": "tsup src/index.ts --format cjs,esm --dts --outDir dist",
     "build.watch": "npm run build --watch",
-    "lint": "TIMING=1 eslint \"**/*.ts*\""
+    "lint": "TIMING=1 eslint \"**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
     "@boilerplate/common": "workspace:*",
     "@temporalio/common": "catalog:",
     "@temporalio/proto": "catalog:",
-    "@temporalio/client": "catalog:"
+    "@temporalio/client": "catalog:",
+    "@temporalio/interceptors-opentelemetry": "catalog:"
   },
   "devDependencies": {
     "@boilerplate/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "tsup": "catalog:",
-    "@temporalio/interceptors-opentelemetry": "catalog:",
     "typescript": "catalog:"
   }
 }
