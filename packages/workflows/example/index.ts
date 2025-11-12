@@ -1,5 +1,5 @@
 import { proxyActivities, log, ApplicationFailure, workflowInfo } from '@temporalio/workflow';
-import * as toolActivities from '../../sharable-activities/tools';
+import * as toolActivities from '@boilerplate/activities';
 
 const { testAdd } = proxyActivities<typeof toolActivities>({
   startToCloseTimeout: '5 minute',
@@ -7,7 +7,6 @@ const { testAdd } = proxyActivities<typeof toolActivities>({
     maximumAttempts: 1,
   }
 });
-
 
 export async function exampleWorkflow() {
   try {

@@ -11,7 +11,7 @@ export function getWorkflowOptions(): Pick<WorkerOptions, "workflowBundle" | "wo
   if (workflowBundlePath && (NODE_ENV === 'production' || NODE_ENV === 'preview')) {
     return { workflowBundle: { codePath: workflowBundlePath } };
   } else {
-    return { workflowsPath: require.resolve('./workflows/index') };
+    return { workflowsPath: require.resolve("../../../packages/workflows/index") };
   }
 }
 

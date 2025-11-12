@@ -9,7 +9,7 @@ import {
 } from '@boilerplate/common';
 import { getConnectionOptions } from '@boilerplate/durable-execution';
 import { getWorkflowOptions, withOptionalStatusServer } from './env';
-import * as activities from './sharable-activities';
+import * as activities from '@boilerplate/activities';
 import { DefaultLogger, NativeConnection, Runtime, Worker, makeTelemetryFilterString } from '@temporalio/worker';
 import {
   OpenTelemetryActivityInboundInterceptor,
@@ -77,7 +77,7 @@ async function run() {
         },
         interceptors: traceExporter && {
           ...(isProd === false && {
-            workflowModules: [require.resolve('./workflows/index')]
+            workflowModules: [require.resolve('../../../packages/workflows/index')]
           }),
           activity: [
             (ctx) => ({

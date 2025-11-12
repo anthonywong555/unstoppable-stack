@@ -1,0 +1,21 @@
+{
+  "name": "@boilerplate/activities",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "./index.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "build.watch": "tsc --build --watch",
+    "lint": "TIMING=1 eslint \"**/*.ts*\""
+  },
+  "dependencies": {
+    "@boilerplate/common": "workspace:*",
+    "@temporalio/activity": "catalog:"
+  },
+  "devDependencies": {
+    "@boilerplate/tsconfig": "workspace:",
+    "eslint": "catalog:",
+    "typescript": "catalog:"
+  }
+}

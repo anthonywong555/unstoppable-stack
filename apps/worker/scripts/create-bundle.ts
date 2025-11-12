@@ -4,15 +4,15 @@ import path from 'path';
 
 async function bundle() {
   const { code } = await bundleWorkflowCode({
-      workflowsPath: require.resolve('../workflows/index'),
+      workflowsPath: require.resolve('../../../packages/workflows/index'),
       // IMPORTANT: When prebundling Workflow code (i.e. using `bundleWorkflowCode(...)`), you MUST
       //            provide the following `workflowModules` property to `bundleWorkflowCode()`;
       //            Workflow code tracing won't work if you don't.
       //
-      workflowInterceptorModules: [require.resolve('../workflows/index')]
+      workflowInterceptorModules: [require.resolve('../../../packages/workflows/index')]
   });
 
-  const codePath = path.join(__dirname, '../../dist/workflow-bundle.js');
+  const codePath = path.join(__dirname, '../dist/workflow-bundle.js');
 
   await writeFile(codePath, code);
   console.log(`Bundle written to ${codePath}`);
