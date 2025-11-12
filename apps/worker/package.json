@@ -21,7 +21,7 @@
     },
     "ext": "ts",
     "watch": [
-      "src"
+      "src", "../../packages/*/"
     ]
   },
   "dependencies": {
