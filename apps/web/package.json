@@ -19,6 +19,7 @@
 		"db:studio": "drizzle-kit studio"
 	},
 	"devDependencies": {
+		"@boilerplate/workflows": "workspace:*",
 		"@eslint/compat": "^2.0.5",
 		"@eslint/js": "^10.0.1",
 		"@fontsource-variable/inter": "^5.2.8",
@@ -66,6 +67,8 @@
 		"zod": "catalog:"
 	},
 	"dependencies": {
+		"@boilerplate/common": "workspace:*",
+		"@boilerplate/durable-execution": "workspace:*",
 		"zero-svelte": "^1.2.2"
 	}
 }
