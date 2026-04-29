@@ -1,21 +1,33 @@
 {
   "name": "@boilerplate/activities",
-  "version": "0.0.1",
-  "license": "MIT",
-  "main": "dist/index.js",
-  "types": "./index.ts",
+  "version": "0.0.0",
+  "private": true,
+  "files": ["dist"],
+  "type": "module",
+  "exports": {
+    "./example": {
+      "import": {
+        "types": "./dist/example.d.ts",
+        "default": "./dist/example.js"
+      },
+      "require": {
+        "types": "./dist/example.d.cts",
+        "default": "./dist/example.cjs"
+      }
+    }
+  },
   "scripts": {
-    "build": "tsc --build",
-    "build.watch": "tsc --build --watch",
-    "lint": "TIMING=1 eslint \"**/*.ts*\""
+    "dev": "tsdown src/**/*.ts --format esm,cjs --dts --watch --clean",
+    "build": "tsdown src/**/*.ts --format esm,cjs --dts --clean",
+    "clean": "rm -rf node_modules/ .turbo/ dist/"
   },
   "dependencies": {
-    "@boilerplate/common": "workspace:*",
     "@temporalio/activity": "catalog:"
   },
   "devDependencies": {
-    "@boilerplate/tsconfig": "workspace:",
-    "eslint": "catalog:",
+    "@boilerplate/common": "workspace:*",
+    "@boilerplate/typescript-config": "workspace:*",
+    "tsdown": "catalog:",
     "typescript": "catalog:"
   }
 }

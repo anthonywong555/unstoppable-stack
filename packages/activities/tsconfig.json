@@ -1,8 +1,4 @@
 {
-  "extends": "@boilerplate/tsconfig/base.json",
-  "compilerOptions": {
-    "lib": ["es2021"],
-    "outDir": "dist/",
-  },
-  "include": ["*.ts", "**/**.ts"]
+  "extends": "@boilerplate/typescript-config/base.json",
+  "include": ["src"]
 }

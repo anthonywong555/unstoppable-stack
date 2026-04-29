@@ -1,8 +1,1 @@
-{
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ],
-  "temporal.replayerEntrypoint": "apps/worker/scripts/debug-replayer.ts"
-}
+{}

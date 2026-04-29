@@ -1,54 +1,44 @@
-# un-STToPZ-paDle Stack
+# temporal-typescript-production
 
-Goal: *Be willing to spin up infra to have a faster developer experience.*
+This document meant to show you the roadmap on how to "productionize" your Temporal Worker for TS. 
 
-The unSTToPpable Stack is a set of JavaScript-based technologies used for building full-stack web applications:
-- [SvelteKit](https://svelte.dev/)
-- [Temporal](https://temporal.io/)
-- [Turborepo](https://turborepo.com/)
-- [PostgreSQL](https://www.postgresql.org/)
-- [Zero](https://zero.rocicorp.dev/)
-- [Drizzle](https://orm.drizzle.team/)
+## Recommended
 
-## Prerequisite
+### Bundle Workflow
 
-In order to *build* this project you will need the following:
+If you prebundle your Workflow Code then this would reduce Worker startup time.
 
-- [pnpm](https://pnpm.io/installation)
-- [Docker](https://docs.docker.com/get-started/get-docker/)
+- [Workflow Options](https://github.com/temporalio/samples-typescript/blob/main/production/src/worker.ts#L5)
+- [Bundle Scripts](https://github.com/temporalio/samples-typescript/blob/main/production/src/scripts/build-workflow-bundle.ts)
 
-In order to *run* this project you will need to have the following services:
+### Metrics, Tracing, and Logs
 
-- [Temporal Server](https://docs.temporal.io/cli#start-dev-server)
+- [OpenTelemetry](https://github.com/temporalio/samples-typescript/tree/main/interceptors-opentelemetry)
+  - [package.json](https://github.com/temporalio/samples-typescript/blob/main/interceptors-opentelemetry/package.json)
+  - [instrumentation.ts](https://github.com/temporalio/samples-typescript/blob/main/interceptors-opentelemetry/src/instrumentation.ts)
+  - [worker.ts - otelSdk.shutdown();](https://github.com/temporalio/samples-typescript/blob/main/interceptors-opentelemetry/src/worker.ts#L93)
 
-## Local Development
+### Distributed Tracing
 
-Run the following commands:
-1. pnpm install
-1. docker compose up -d postgres
-1. pnpm run dev
+- [OpenTelemetryWorkflowClientInterceptor](https://github.com/temporalio/sdk-typescript/blob/42b16641ef2ad4afd81afd45de15cb9a2c10aff2/packages/interceptors-opentelemetry/src/plugin.ts#L36)
+- [Example](https://github.com/anthonywong555/temporal-grocery-search-deals/blob/946fd400ab97825e04d00e32279f48cca49bb404/packages/temporal/connection/index.ts#L69)
 
-## Production
+### Health Check
 
-After deploying apps to production, you also want to execute the following command:
+- [healthService.check](https://github.com/temporalio/sdk-typescript/blob/main/packages/test/src/test-client-connection.ts#L224C32-L224C50)
+  - [withOptionalStatusServer](https://github.com/temporalio/sdk-typescript/blob/42b16641ef2ad4afd81afd45de15cb9a2c10aff2/packages/test/src/load/worker.ts#L173)
 
-1. cd apps/sync-engine-server
-1. pnpm run deploy
+### VSCode
 
-### (Optional) Docker Compose
+- [Debugger](https://marketplace.visualstudio.com/items?itemName=temporal-technologies.temporalio)
 
-Run the following commands:
-1. pnpm install
-1. pnpm run build
-1. docker compose up:
-- The *docker-compose-full.yml* will spin up everything for you.
-- The *docker-compose.yml* will not spin up Temporal, but everything else.
+## Optional
 
-## Tips
+## Custom Logger
 
-### How to connect to PostgresDB?
+- [Winston](https://github.com/temporalio/samples-typescript/tree/main/custom-logger)
+ 
+## Sentry
 
-Attach a shell to the PostgresDB and run the following command:
-
-1. psql -U user -d postgres
-1. \dt
+- [OpenTelemetry](https://github.com/getsentry/sentry-javascript/tree/develop/packages/opentelemetry)
+  - [SvelteKit](https://github.com/getsentry/sentry-javascript/tree/develop/packages/sveltekit)

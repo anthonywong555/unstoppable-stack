@@ -7,10 +7,6 @@
     "dev": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
-    },
-    "build:code": {
-      "dependsOn": ["build"],
-      "outputs": ["dist/**"]
     }
   }
 }

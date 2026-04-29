@@ -5,11 +5,7 @@
   ],
   "tasks": {
     "dev": {
-      "dependsOn": ["build"],
-      "outputs": ["dist/**"]
-    },
-    "build:code": {
-      "dependsOn": ["build"],
+      "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     }
   }

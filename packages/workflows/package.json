@@ -1,21 +1,44 @@
 {
   "name": "@boilerplate/workflows",
-  "version": "0.0.1",
-  "license": "MIT",
-  "main": "./index.ts",
-  "types": "./index.ts",
+  "version": "0.0.0",
+  "private": true,
+  "files": ["dist"],
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./worker-a": {
+      "import": {
+        "types": "./dist/workers/worker-a.d.ts",
+        "default": "./dist/workers/worker-a.mjs"
+      },
+      "require": {
+        "types": "./dist/workers/worker-a.d.cts",
+        "default": "./dist/workers/worker-a.cjs"
+      }
+    }
+  },
   "scripts": {
-    "lint": "TIMING=1 eslint \"**/*.ts*\""
+    "dev": "tsdown --watch",
+    "build": "tsdown",
+    "clean": "rm -rf node_modules/ .turbo/ dist/"
   },
   "dependencies": {
-    "@boilerplate/common": "workspace:*",
-    "@temporalio/workflow": "catalog:",
-    "@temporalio/interceptors-opentelemetry": "catalog:"
+    "@temporalio/workflow": "catalog:"
   },
   "devDependencies": {
-    "@boilerplate/tsconfig": "workspace:*",
     "@boilerplate/activities": "workspace:*",
-    "eslint": "catalog:",
+    "@boilerplate/common": "workspace:*",
+    "@boilerplate/typescript-config": "workspace:*",
+    "tsdown": "catalog:",
     "typescript": "catalog:"
   }
 }

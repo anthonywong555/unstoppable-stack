@@ -1,5 +1,4 @@
 {
-  "extends": "@boilerplate/tsconfig/base.json",
-  "include": ["."],
-  "exclude": ["node_modules"]
+  "extends": "@boilerplate/typescript-config/base.json",
+  "include": ["src"]
 }
