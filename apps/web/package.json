@@ -69,6 +69,7 @@
 	"dependencies": {
 		"@boilerplate/common": "workspace:*",
 		"@boilerplate/durable-execution": "workspace:*",
+		"@temporalio/client": "catalog:",
 		"zero-svelte": "^1.2.2"
 	}
 }

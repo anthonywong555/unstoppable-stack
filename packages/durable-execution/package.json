@@ -7,8 +7,8 @@
   "exports": {
     "./connection": {
       "import": {
-        "types": "./dist/connection.d.ts",
-        "default": "./dist/connection.js"
+        "types": "./dist/connection.d.mts",
+        "default": "./dist/connection.mjs"
       },
       "require": {
         "types": "./dist/connection.d.cts",

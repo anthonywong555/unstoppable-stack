@@ -7,8 +7,8 @@
   "exports": {
     "./example": {
       "import": {
-        "types": "./dist/example.d.ts",
-        "default": "./dist/example.js"
+        "types": "./dist/example.d.mts",
+        "default": "./dist/example.mjs"
       },
       "require": {
         "types": "./dist/example.d.cts",
