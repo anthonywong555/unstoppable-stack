@@ -1,15 +1,8 @@
-import { env } from "$env/dynamic/private";
-import { connectToTemporal } from "@boilerplate/durable-execution/connection";
+import { getClient } from "$lib/server/durable-execution";
 import { isGrpcDeadlineError, Client } from "@temporalio/client";
+import { query } from '$app/server';
 
-let client: Client;
-
-export async function getClient() {
-  client = await connectToTemporal(env);
-  return client;
-}
-
-export async function getStatus() {
+export const getStatus = query(async() => {
   try {
     const client = await getClient();
     const result = await client.withDeadline(Date.now() + 100, () => client.connection.workflowService.getSystemInfo({}));
@@ -22,4 +15,4 @@ export async function getStatus() {
     }
     return false;
   }
-}
+})

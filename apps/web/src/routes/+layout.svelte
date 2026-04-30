@@ -4,10 +4,11 @@
 	import { Toaster } from "$lib/components/ui/sonner/index.js";
 	import { ModeWatcher } from "mode-watcher";
 	import type { LayoutProps } from './$types';
+	import { getStatus } from '../routes/durable-execution/data.remote';
 
-	let { data, children }: LayoutProps = $props();
+	let { children }: LayoutProps = $props();
 
-	const healthCheck = fetch('/api/durable-execution').then(res => res.json());
+	const query = getStatus();
 </script>
 
 <svelte:head>
@@ -19,15 +20,14 @@
 {@render children()}
 
 
-
-{#await healthCheck}
-  <p>Checking Temporal...</p>
-{:then data}
-  {#if data}
-    <p>✅ Temporal is online</p>
-  {:else}
-    <p>❌ Temporal is offline}</p>
-  {/if}
-{:catch err}
-  <p>❌ Failed to reach health endpoint</p>
-{/await}
+{#if query.error}
+	<p>oops!</p>
+{:else if query.loading}
+	<p>loading...</p>
+{:else}
+	{#if query.current === true}
+	<h1>Ablet to connect to Temporal</h1>
+	{:else}
+	<h1>Not able to connect Temporal</h1>
+	{/if}
+{/if}
