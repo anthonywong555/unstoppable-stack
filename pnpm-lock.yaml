@@ -10,29 +10,29 @@ catalogs:
       specifier: ^8.57.1
       version: 8.57.1
     '@temporalio/activity':
-      specifier: ^1.16.1
-      version: 1.16.1
+      specifier: ^1.17.0
+      version: 1.17.0
     '@temporalio/client':
-      specifier: ^1.16.1
-      version: 1.16.1
+      specifier: ^1.17.0
+      version: 1.17.0
     '@temporalio/common':
-      specifier: ^1.16.1
-      version: 1.16.1
+      specifier: ^1.17.0
+      version: 1.17.0
     '@temporalio/envconfig':
-      specifier: ^1.16.1
-      version: 1.16.1
+      specifier: ^1.17.0
+      version: 1.17.0
     '@temporalio/interceptors-opentelemetry':
-      specifier: ^1.16.1
-      version: 1.16.1
+      specifier: ^1.17.0
+      version: 1.17.0
     '@temporalio/proto':
-      specifier: ^1.16.1
-      version: 1.16.1
+      specifier: ^1.17.0
+      version: 1.17.0
     '@temporalio/worker':
-      specifier: ^1.16.1
-      version: 1.16.1
+      specifier: ^1.17.0
+      version: 1.17.0
     '@temporalio/workflow':
-      specifier: ^1.16.1
-      version: 1.16.1
+      specifier: ^1.17.0
+      version: 1.17.0
     '@typescript-eslint/eslint-plugin':
       specifier: ^8.18.0
       version: 8.59.1
@@ -53,7 +53,7 @@ catalogs:
       version: 1.2.1
     eslint-plugin-turbo:
       specifier: ^2.7.1
-      version: 2.9.6
+      version: 2.9.7
     nodemon:
       specifier: ^3.1.7
       version: 3.1.14
@@ -82,7 +82,7 @@ importers:
         version: 3.8.3
       turbo:
         specifier: ^2.8.20
-        version: 2.9.6
+        version: 2.9.7
       typescript:
         specifier: 5.9.2
         version: 5.9.2
@@ -127,22 +127,22 @@ importers:
         version: 1.40.0
       '@temporalio/activity':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
       '@temporalio/client':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
       '@temporalio/envconfig':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
       '@temporalio/interceptors-opentelemetry':
         specifier: 'catalog:'
-        version: 1.16.1(@temporalio/common@1.16.1)(@temporalio/workflow@1.16.1)
+        version: 1.17.0(@temporalio/common@1.17.0)(@temporalio/workflow@1.17.0)
       '@temporalio/worker':
         specifier: 'catalog:'
-        version: 1.16.1(@swc/helpers@0.5.21)(tslib@2.8.1)
+        version: 1.17.0(@swc/helpers@0.5.21)(tslib@2.8.1)
       '@temporalio/workflow':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
       triple-beam:
         specifier: ^1.3.0
         version: 1.4.1
@@ -236,22 +236,22 @@ importers:
         version: 1.40.0
       '@temporalio/activity':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
       '@temporalio/client':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
       '@temporalio/envconfig':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
       '@temporalio/interceptors-opentelemetry':
         specifier: 'catalog:'
-        version: 1.16.1(@temporalio/common@1.16.1)(@temporalio/workflow@1.16.1)
+        version: 1.17.0(@temporalio/common@1.17.0)(@temporalio/workflow@1.17.0)
       '@temporalio/worker':
         specifier: 'catalog:'
-        version: 1.16.1(@swc/helpers@0.5.21)(tslib@2.8.1)
+        version: 1.17.0(@swc/helpers@0.5.21)(tslib@2.8.1)
       '@temporalio/workflow':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
       triple-beam:
         specifier: ^1.3.0
         version: 1.4.1
@@ -294,7 +294,7 @@ importers:
         version: link:../../packages/durable-execution
       '@temporalio/client':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
       zero-svelte:
         specifier: ^1.2.2
         version: 1.2.2(@opentelemetry/core@2.7.1(@opentelemetry/api@1.9.1))(svelte@5.55.5(@typescript-eslint/types@8.59.1))
@@ -304,10 +304,10 @@ importers:
         version: link:../../packages/workflows
       '@eslint/compat':
         specifier: ^2.0.5
-        version: 2.0.5(eslint@10.2.1(jiti@2.6.1))
+        version: 2.0.5(eslint@10.3.0(jiti@2.6.1))
       '@eslint/js':
         specifier: ^10.0.1
-        version: 10.0.1(eslint@10.2.1(jiti@2.6.1))
+        version: 10.0.1(eslint@10.3.0(jiti@2.6.1))
       '@fontsource-variable/inter':
         specifier: ^5.2.8
         version: 5.2.8
@@ -358,13 +358,13 @@ importers:
         version: 0.45.2(@opentelemetry/api@1.9.1)(@types/pg@8.15.5)(pg@8.20.0)(postgres@3.4.9)
       eslint:
         specifier: ^10.2.0
-        version: 10.2.1(jiti@2.6.1)
+        version: 10.3.0(jiti@2.6.1)
       eslint-config-prettier:
         specifier: ^10.1.8
-        version: 10.1.8(eslint@10.2.1(jiti@2.6.1))
+        version: 10.1.8(eslint@10.3.0(jiti@2.6.1))
       eslint-plugin-svelte:
         specifier: ^3.17.0
-        version: 3.17.1(eslint@10.2.1(jiti@2.6.1))(svelte@5.55.5(@typescript-eslint/types@8.59.1))(ts-node@10.9.2(@swc/core@1.15.32(@swc/helpers@0.5.21))(@types/node@22.19.17)(typescript@6.0.3))
+        version: 3.17.1(eslint@10.3.0(jiti@2.6.1))(svelte@5.55.5(@typescript-eslint/types@8.59.1))(ts-node@10.9.2(@swc/core@1.15.32(@swc/helpers@0.5.21))(@types/node@22.19.17)(typescript@6.0.3))
       formsnap:
         specifier: ^2.0.1
         version: 2.0.1(svelte@5.55.5(@typescript-eslint/types@8.59.1))(sveltekit-superforms@2.30.1(@sveltejs/kit@2.58.0(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.5(@typescript-eslint/types@8.59.1))(vite@8.0.10(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.2)(tsx@4.21.0)))(svelte@5.55.5(@typescript-eslint/types@8.59.1))(typescript@6.0.3)(vite@8.0.10(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.2)(tsx@4.21.0)))(@types/json-schema@7.0.15)(svelte@5.55.5(@typescript-eslint/types@8.59.1))(typescript@6.0.3))
@@ -403,7 +403,7 @@ importers:
         version: 5.55.5(@typescript-eslint/types@8.59.1)
       svelte-check:
         specifier: ^4.4.6
-        version: 4.4.6(picomatch@4.0.4)(svelte@5.55.5(@typescript-eslint/types@8.59.1))(typescript@6.0.3)
+        version: 4.4.7(picomatch@4.0.4)(svelte@5.55.5(@typescript-eslint/types@8.59.1))(typescript@6.0.3)
       svelte-sonner:
         specifier: ^1.1.0
         version: 1.1.1(svelte@5.55.5(@typescript-eslint/types@8.59.1))
@@ -430,7 +430,7 @@ importers:
         version: 6.0.3
       typescript-eslint:
         specifier: ^8.58.1
-        version: 8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)
+        version: 8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)
       vite:
         specifier: ^8.0.7
         version: 8.0.10(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.2)(tsx@4.21.0)
@@ -442,7 +442,7 @@ importers:
     dependencies:
       '@temporalio/activity':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
     devDependencies:
       '@boilerplate/common':
         specifier: workspace:*
@@ -480,16 +480,16 @@ importers:
         version: link:../common
       '@temporalio/client':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
       '@temporalio/common':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
       '@temporalio/interceptors-opentelemetry':
         specifier: 'catalog:'
-        version: 1.16.1(@temporalio/common@1.16.1)(@temporalio/workflow@1.16.1)
+        version: 1.17.0(@temporalio/common@1.17.0)(@temporalio/workflow@1.17.0)
       '@temporalio/proto':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
     devDependencies:
       '@boilerplate/typescript-config':
         specifier: workspace:*
@@ -520,7 +520,7 @@ importers:
         version: 1.2.1
       eslint-plugin-turbo:
         specifier: 'catalog:'
-        version: 2.9.6(eslint@8.57.1)(turbo@2.9.6)
+        version: 2.9.7(eslint@8.57.1)(turbo@2.9.7)
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
@@ -531,7 +531,7 @@ importers:
     dependencies:
       '@temporalio/workflow':
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 1.17.0
     devDependencies:
       '@boilerplate/activities':
         specifier: workspace:*
@@ -3064,54 +3064,54 @@ packages:
     peerDependencies:
       vite: ^5.2.0 || ^6 || ^7 || ^8
 
-  '@temporalio/activity@1.16.1':
-    resolution: {integrity: sha512-1uJAar5SGaeQVKfS145QmWAJE8yxqJJCwtjMmRzCzB+eX6Qsg0x27ynhNxeFX87sMNFp5JeY36rsK7DdPjXiYQ==}
+  '@temporalio/activity@1.17.0':
+    resolution: {integrity: sha512-jjF38/VX7c9eyAb9g4oP4CAAYO3oWNIPIks5R5z0yszoDGBq+29UwsHYd6WrMviGt63NvLhWJWEOyeyGdA6L1g==}
     engines: {node: '>= 20.0.0'}
 
-  '@temporalio/client@1.16.1':
-    resolution: {integrity: sha512-UX3ETFgSh/EzapmkeTwiTgGf7BGr1DhqxGQRfoXcqFa3bviKzJYLuFCY3B9KL/2hMO9G4y925ft/nydemAUisQ==}
+  '@temporalio/client@1.17.0':
+    resolution: {integrity: sha512-mc1VHfuVjT7D/QprjEGQFpbePMvuA0/kqIWhrEN+D1VYkLdhaMkuMgVjPtsxXjvACR20+qEsDg5m0a1qjllEoA==}
     engines: {node: '>= 20.0.0'}
 
-  '@temporalio/common@1.16.1':
-    resolution: {integrity: sha512-Tyiz+ifoMidJ2MkhKkIkJidvNwuasWbFhfSM9QNbhTF3ovNtuDX+8t5d56byRgyKnZC2lXUwFsnFCEKm7MB9RQ==}
+  '@temporalio/common@1.17.0':
+    resolution: {integrity: sha512-xOnb1vLYOO9PwTX2kmQdZROnH4fpC+wHSKQxQVZCOFrtxmcF8iN6Llzvc1tP+PQJncLnVpx+YrSCIzSY+e43cw==}
     engines: {node: '>= 20.0.0'}
 
-  '@temporalio/core-bridge@1.16.1':
-    resolution: {integrity: sha512-0wELfU3oRX1TzY3C6Z+7mcKzhDT6RCw/V1nNZS9Emz/aJCuwLY7gCmktj/MmvG8AFEkV6wYHhc0Ss2nMHZGDGg==}
+  '@temporalio/core-bridge@1.17.0':
+    resolution: {integrity: sha512-AR6vLRIyvIaY4raq2wZ9iboKe0IljWgwXM8Hei2OvbmgLNEt0PTiwFPQmVPbsafijOZPKazF1KiPrGrDCE33yA==}
     engines: {node: '>= 20.0.0'}
 
-  '@temporalio/envconfig@1.16.1':
-    resolution: {integrity: sha512-kNDcZWlpKFlLLn4LCJ9fFYbItLtzYKnIhkmYxiD764o0Uanc7eqFP7Z9p+shltkCTDgE5fLzuXDBNaoA7/jt4A==}
+  '@temporalio/envconfig@1.17.0':
+    resolution: {integrity: sha512-tzUQkizqzUhsgnqn7azaxRXrgjZHMP28AiYCAEncI3PuWF4R5Uu9WVI4Bx5qoQO6w6HUFE3nf/Dg8CTBKwVmAw==}
     engines: {node: '>= 20.0.0'}
 
-  '@temporalio/interceptors-opentelemetry@1.16.1':
-    resolution: {integrity: sha512-YMBpN1ECBnVtBZ8giIZZqtPjj9C6b7KQRiSR/LBJO1yX+DRsaMKqhtG0/KmChMJDCnAYZTvqf7SaeEP/WFjyNg==}
+  '@temporalio/interceptors-opentelemetry@1.17.0':
+    resolution: {integrity: sha512-RobMMxHknZT3bO9UzfIZQ2OzbxGSxb9jt0EmIjrwxZe9iu0s5E5V7Q55pk0g+gGHUaZT8hmFf8J/j1lG61I3Eg==}
     engines: {node: '>= 20.0.0'}
     peerDependencies:
-      '@temporalio/common': 1.16.1
-      '@temporalio/workflow': 1.16.1
+      '@temporalio/common': 1.17.0
+      '@temporalio/workflow': 1.17.0
     peerDependenciesMeta:
       '@temporalio/workflow':
         optional: true
 
-  '@temporalio/nexus@1.16.1':
-    resolution: {integrity: sha512-wFkHAtfbUoy3BFjXVuDKYZUodP7XAeqqBVlprty5/pf5AacAneE8tJHON6o1P1YJeoUZ8/8vIdCj/YcBjAvsYg==}
+  '@temporalio/nexus@1.17.0':
+    resolution: {integrity: sha512-IdVTVS3INmXlRCgmG0Rt0wDfiXrk94A/813AahCDbgq3NdcCRCnAbO0a7KwOJh0S0P0153zX4YZlIStRwfQEGQ==}
     engines: {node: '>= 20.0.0'}
 
-  '@temporalio/plugin@1.16.1':
-    resolution: {integrity: sha512-DLWEBCg7Txcq59uI63/T+8OAghx0GwUZGxbVPHDDLKDk64AVWAqwERivdKrhCrK2O/griqXMgA5aphw/Fj2avQ==}
+  '@temporalio/plugin@1.17.0':
+    resolution: {integrity: sha512-Z4DaaHzcyLemiEQR5zlEITv4y2DvFOYtYDUqOw6qgCKrewtRpJKA3qGiwLYSoWP1HxKn5yUs6sHe9d/9g3ZWXQ==}
     engines: {node: '>= 20.0.0'}
 
-  '@temporalio/proto@1.16.1':
-    resolution: {integrity: sha512-P2BBtKkK9/6or4o5q2stz/56d8dBSkFfS3Bc4GFG24gtA+IZyQnRHRpuGYVwdE4FoVXZozv+dgky46Bv8qyHyQ==}
+  '@temporalio/proto@1.17.0':
+    resolution: {integrity: sha512-Ymo/ka9gO79o3LI0QOSlZuWA2MzrK1ymbwdrBiQrmQFFx/+kb7iFJG91sAaadbCXQONagBG1N+pmFei0b6bSZw==}
     engines: {node: '>= 20.0.0'}
 
-  '@temporalio/worker@1.16.1':
-    resolution: {integrity: sha512-cBE0qDXxlN7bheGAhooinEKljQERyd+hezuIwKvWVkwJUnZG/Ov0S8MAcJ/qcOO8Wikunhuk0MKwsj5pSd1gZg==}
+  '@temporalio/worker@1.17.0':
+    resolution: {integrity: sha512-oMqar4aMeFyPX30/NfrSGb9VNHzPoP0w9fYiKvyzWV7ZzpvWYufIZYBahnnvy6UwtFBOyv+RwiSxmgOu9TexWA==}
     engines: {node: '>= 20.0.0'}
 
-  '@temporalio/workflow@1.16.1':
-    resolution: {integrity: sha512-j4FyUNXDoipk+AYoiCVh8A+RYiHmXP53sqox7xKh/UV0DHy8Gx7l3IR2v2zd7aYHWE9Xw46S3mLMYH8O8mz2HQ==}
+  '@temporalio/workflow@1.17.0':
+    resolution: {integrity: sha512-/iYRcjUYQmW/K6le63Y7yp+bdI+4cw8tWDVvHHUEtaT5b2L/4eMbQzmNwuKb0LZCNXi9R6SaUHNJp6EqHMpFNQ==}
     engines: {node: '>= 20.0.0'}
 
   '@tsconfig/node10@1.0.12':
@@ -3129,33 +3129,33 @@ packages:
   '@tsconfig/node22@22.0.5':
     resolution: {integrity: sha512-hLf2ld+sYN/BtOJjHUWOk568dvjFQkHnLNa6zce25GIH+vxKfvTgm3qpaH6ToF5tu/NN0IH66s+Bb5wElHrLcw==}
 
-  '@turbo/darwin-64@2.9.6':
-    resolution: {integrity: sha512-X/56SnVXIQZBLKwniGTwEQTGmtE5brSACnKMBWpY3YafuxVYefrC2acamfjgxP7BG5w3I+6jf0UrLoSzgPcSJg==}
+  '@turbo/darwin-64@2.9.7':
+    resolution: {integrity: sha512-wnvOWuVWJ5EUHNKxExEWiGlTeVpLG1L0PCu5MUozyC1P2SHGiWsmpW6/yAuShH91Fa2TAHOvdCRBzriZh4j4Eg==}
     cpu: [x64]
     os: [darwin]
 
-  '@turbo/darwin-arm64@2.9.6':
-    resolution: {integrity: sha512-aalBeSl4agT/QtYGDyf/XLajedWzUC9Vg/pm/YO6QQ93vkQ91Vz5uK1ta5RbVRDozQSz4njxUNqRNmOXDzW+qw==}
+  '@turbo/darwin-arm64@2.9.7':
+    resolution: {integrity: sha512-mA0FIPMwwN3lodDkQYaGxj6PeT7ZaN5aCEbkKn/WB+ZB9yJdVWA4J83GH7t43jqDc5dcnVluVN5UFx3plRiXhA==}
     cpu: [arm64]
     os: [darwin]
 
-  '@turbo/linux-64@2.9.6':
-    resolution: {integrity: sha512-YKi05jnNHaD7vevgYwahpzGwbsNNTwzU2c7VZdmdFm7+cGDP4oREUWSsainiMfRqjRuolQxBwRn8wf1jmu+YZA==}
+  '@turbo/linux-64@2.9.7':
+    resolution: {integrity: sha512-fEbUYpgb5l7P+q+5tsWF2gw+/GSjUsuUTcnfm+f0lozUjgcjLKyOat6PgtAChmIFcTPchCL/8rJ3TvkBy01gfA==}
     cpu: [x64]
     os: [linux]
 
-  '@turbo/linux-arm64@2.9.6':
-    resolution: {integrity: sha512-02o/ZS69cOYEDczXvOB2xmyrtzjQ2hVFtWZK1iqxXUfzMmTjZK4UumrfNnjckSg+gqeBfnPRHa0NstA173Ik3g==}
+  '@turbo/linux-arm64@2.9.7':
+    resolution: {integrity: sha512-VkUjulo9ytfHKUHOS5gy0XPoh4CTKPXWCL8nLdrlHVi9fSut31ECeUqnm/dAbETP5D4xo9mH9XkJ+qMzGe/zmg==}
     cpu: [arm64]
     os: [linux]
 
-  '@turbo/windows-64@2.9.6':
-    resolution: {integrity: sha512-wVdQjvnBI15wB6JrA+43CtUtagjIMmX6XYO758oZHAsCNSxqRlJtdyujih0D8OCnwCRWiGWGI63zAxR0hO6s9g==}
+  '@turbo/windows-64@2.9.7':
+    resolution: {integrity: sha512-/GWdY6/x4aIHqkYJq596Rpdk1x0MkpRPkJcLAoB3yGRwyUms0+u2F1GnV54IbyAZTeKLRWSJKzNC+QwVGdYchA==}
     cpu: [x64]
     os: [win32]
 
-  '@turbo/windows-arm64@2.9.6':
-    resolution: {integrity: sha512-1XUUyWW0W6FTSqGEhU8RHVqb2wP1SPkr7hIvBlMEwH9jr+sJQK5kqeosLJ/QaUv4ecSAd1ZhIrLoW7qslAzT4A==}
+  '@turbo/windows-arm64@2.9.7':
+    resolution: {integrity: sha512-xBBgxCC5PK2+WZ1PPRZdp+aJ0bMBcEbweXWux3RUHJvX9ZodcoQySkrW6qt+ahb+uk8ZjyQodLfDwtVSoYds1w==}
     cpu: [arm64]
     os: [win32]
 
@@ -3553,8 +3553,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  baseline-browser-mapping@2.10.24:
-    resolution: {integrity: sha512-I2NkZOOrj2XuguvWCK6OVh9GavsNjZjK908Rq3mIBK25+GD8vPX5w2WdxVqnQ7xx3SrZJiCiZFu+/Oz50oSYSA==}
+  baseline-browser-mapping@2.10.25:
+    resolution: {integrity: sha512-QO/VHsXCQdnzADMfmkeOPvHdIAkoB7i0/rGjINPJEetLx75hNttVWGQ/jycHUDP9zZ9rupbm60WRxcwViB0MiA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -3816,8 +3816,8 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  devalue@5.7.1:
-    resolution: {integrity: sha512-MUbZ586EgQqdRnC4yDrlod3BEdyvE4TapGYHMW2CiaW+KkkFmWEFqBUaLltEZCGi0iFXCEjRF0OjF0DV2QHjOA==}
+  devalue@5.8.0:
+    resolution: {integrity: sha512-2zA9pFEsnp7vWBZbXF5JAgAq0fsUIt/1XPbRiAmRV3lp/2C3upzH+sADiyy66aFCihoLEsrQHxNM5w1gIDfsBg==}
 
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
@@ -3964,8 +3964,8 @@ packages:
   effect@3.21.2:
     resolution: {integrity: sha512-rXd2FGDM8KdjSIrc+mqEELo7ScW7xTVxEf1iInmPSpIde9/nyGuFM710cjTo7/EreGXiUX2MOonPpprbz2XHCg==}
 
-  electron-to-chromium@1.5.345:
-    resolution: {integrity: sha512-F9JXQGiMrz6yVNPI2qOVPvB9HzjH5cGzhs8oJ6A28V5L/YnzN/0KsuiibqF+F1Fd9qxFzD1BUnYSd8JfULxTwg==}
+  electron-to-chromium@1.5.348:
+    resolution: {integrity: sha512-QC2X59nRlycQQMc4ZXjSVBX+tSgJfgRtcrYHbIZLgOV2dCvefoQGegLR7lLXKgpPpSuVmJU19LMzGrSa2C7k3Q==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -4053,8 +4053,8 @@ packages:
       svelte:
         optional: true
 
-  eslint-plugin-turbo@2.9.6:
-    resolution: {integrity: sha512-mntEkRe71izva2mJHZGxH2ccOdySqXiNJf5tdzRabaxhudLCeonPUdTE6aNGOhgVeL1lclxg5/ibp3C/cpe+kQ==}
+  eslint-plugin-turbo@2.9.7:
+    resolution: {integrity: sha512-jFCPV+hnGXNBFjESdF3jmKFD11orR8JcXEjuPSGDW7QyLeYG76shsTHO5JjuRvOFwRO0SEPkTfMdxHKnVnnuWg==}
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
@@ -4087,8 +4087,8 @@ packages:
     resolution: {integrity: sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  eslint@10.2.1:
-    resolution: {integrity: sha512-wiyGaKsDgqXvF40P8mDwiUp/KQjE1FdrIEJsM8PZ3XCiniTMXS3OHWWUe5FI5agoCnr8x4xPrTDZuxsBlNHl+Q==}
+  eslint@10.3.0:
+    resolution: {integrity: sha512-XbEXaRva5cF0ZQB8w6MluHA0kZZfV2DuCMJ3ozyEOHLwDpZX2Lmm/7Pp0xdJmI0GL1W05VH5VwIFHEm1Vcw2gw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     hasBin: true
     peerDependencies:
@@ -4857,13 +4857,13 @@ packages:
     resolution: {integrity: sha512-kh8ARjh8rMN7Du2igDRO9QJnqCb2xYTJxyQYK7vJJS4TvLLmsbyhiKpSW+t+y26gyOyMd0riphX0GeWKU3ky5g==}
     engines: {node: '>=12.13'}
 
-  nanoid@3.3.11:
-    resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
+  nanoid@3.3.12:
+    resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nanoid@5.1.9:
-    resolution: {integrity: sha512-ZUvP7KeBLe3OZ1ypw6dI/TzYJuvHP77IM4Ry73waSQTLn8/g8rpdjfyVAh7t1/+FjBtG4lCP42MEbDxOsRpBMw==}
+  nanoid@5.1.11:
+    resolution: {integrity: sha512-v+KEsUv2ps74PaSKv0gHTxTCgMXOIfBEbaqa6w6ISIGC7ZsvHN4N9oJ8d4cmf0n5oTzQz2SLmThbQWhjd/8eKg==}
     engines: {node: ^18 || >=20}
     hasBin: true
 
@@ -5086,8 +5086,8 @@ packages:
     resolution: {integrity: sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg==}
     engines: {node: '>=4'}
 
-  postcss@8.5.12:
-    resolution: {integrity: sha512-W62t/Se6rA0Az3DfCL0AqJwXuKwBeYg6nOaIgzP+xZ7N5BFCI7DYi1qs6ygUYT6rvfi6t9k65UMLJC+PHZpDAA==}
+  postcss@8.5.13:
+    resolution: {integrity: sha512-qif0+jGGZoLWdHey3UFHHWP0H7Gbmsk8T5VEqyYFbWqPr1XqvLGBbk/sl8V5exGmcYJklJOhOQq1pV9IcsiFag==}
     engines: {node: ^10 || ^12 || >=14}
 
   postgres-array@2.0.0:
@@ -5209,6 +5209,10 @@ packages:
   proto3-json-serializer@2.0.2:
     resolution: {integrity: sha512-SAzp/O4Yh02jGdRc+uIrGoe87dkN/XtwxfZ4ZyafJHymd79ozp5VG5nyZ7ygqPM5+cpLDjjGnYFUkngonyDPOQ==}
     engines: {node: '>=14.0.0'}
+
+  protobufjs@7.5.5:
+    resolution: {integrity: sha512-3wY1AxV+VBNW8Yypfd1yQY9pXnqTAN+KwQxL8iYm3/BjKYMNg4i0owhEe26PWDOMaIrzeeF98Lqd5NGz4omiIg==}
+    engines: {node: '>=12.0.0'}
 
   protobufjs@7.5.6:
     resolution: {integrity: sha512-M71sTMB146U3u0di3yup8iM+zv8yPRNQVr1KK4tyBitl3qFvEGucq/rGDRShD2rsJhtN02RJaJ7j5X5hmy8SJg==}
@@ -5558,8 +5562,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  svelte-check@4.4.6:
-    resolution: {integrity: sha512-kP1zG81EWaFe9ZyTv4ZXv44Csi6Pkdpb7S3oj6m+K2ec/IcDg/a8LsFsnVLqm2nxtkSwsd5xPj/qFkTBgXHXjg==}
+  svelte-check@4.4.7:
+    resolution: {integrity: sha512-JRafFTRmaPUOqmri4u1WuIKgBLiHi6wIaB57i99pmHq5BAc3ioIpzdUN/RX32ij9GhI6ALMHKvnVxu68sFZlag==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -5807,8 +5811,8 @@ packages:
   tunnel-agent@0.6.0:
     resolution: {integrity: sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==}
 
-  turbo@2.9.6:
-    resolution: {integrity: sha512-+v2QJey7ZUeUiuigkU+uFfklvNUyPI2VO2vBpMYJA+a1hKFLFiKtUYlRHdb3P9CrAvMzi0upbjI4WT+zKtqkBg==}
+  turbo@2.9.7:
+    resolution: {integrity: sha512-epxzqVO2s0IxcSWcgb+qKrtco8isfe7g3VtiS6hkYnEK4A9XQDZbrtavQ6MtWR1KoQn+1fUomaQth2rfRHlUlg==}
     hasBin: true
 
   tw-animate-css@1.4.0:
@@ -5826,8 +5830,8 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  typebox@1.1.35:
-    resolution: {integrity: sha512-kB3HoCOAE+cJ+xMCBKDsnlRJ5Fh39cIXBQ29vcqsN9+AVxCKa0qA84SDkDM51hrBOAkmAyYTpfFBdi6RzbfATA==}
+  typebox@1.1.37:
+    resolution: {integrity: sha512-jb7jp6KvOvvy5sd+11AfJ0/e0F0AS9RcOXd55oGi2ZnRHIGmFvrTaNF+ZidRmGBmmNTkM5KKl0Z37KzxJ+owEQ==}
 
   typescript-eslint@8.59.1:
     resolution: {integrity: sha512-xqDcFVBmlrltH64lklOVp1wYxgJr6LVdg3NamBgH2OOQDLFdTKfIZXF5PfghrnXQKXZGTQs8tr1vL7fJvq8CTQ==}
@@ -6461,9 +6465,9 @@ snapshots:
   '@esbuild/win32-x64@0.27.7':
     optional: true
 
-  '@eslint-community/eslint-utils@4.9.1(eslint@10.2.1(jiti@2.6.1))':
+  '@eslint-community/eslint-utils@4.9.1(eslint@10.3.0(jiti@2.6.1))':
     dependencies:
-      eslint: 10.2.1(jiti@2.6.1)
+      eslint: 10.3.0(jiti@2.6.1)
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/eslint-utils@4.9.1(eslint@8.57.1)':
@@ -6473,11 +6477,11 @@ snapshots:
 
   '@eslint-community/regexpp@4.12.2': {}
 
-  '@eslint/compat@2.0.5(eslint@10.2.1(jiti@2.6.1))':
+  '@eslint/compat@2.0.5(eslint@10.3.0(jiti@2.6.1))':
     dependencies:
       '@eslint/core': 1.2.1
     optionalDependencies:
-      eslint: 10.2.1(jiti@2.6.1)
+      eslint: 10.3.0(jiti@2.6.1)
 
   '@eslint/config-array@0.23.5':
     dependencies:
@@ -6509,9 +6513,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/js@10.0.1(eslint@10.2.1(jiti@2.6.1))':
+  '@eslint/js@10.0.1(eslint@10.3.0(jiti@2.6.1))':
     optionalDependencies:
-      eslint: 10.2.1(jiti@2.6.1)
+      eslint: 10.3.0(jiti@2.6.1)
 
   '@eslint/js@8.57.1': {}
 
@@ -8347,7 +8351,7 @@ snapshots:
       js-xxhash: 4.0.0
       json-custom-numbers: 3.1.1
       kasi: 1.1.2
-      nanoid: 5.1.9
+      nanoid: 5.1.11
       parse-prometheus-text-format: 1.1.1
       pg-format: pg-format-fix@1.0.5
       postgres: 3.4.7
@@ -8605,7 +8609,7 @@ snapshots:
       '@types/cookie': 0.6.0
       acorn: 8.16.0
       cookie: 0.6.0
-      devalue: 5.7.1
+      devalue: 5.8.0
       esm-env: 1.2.2
       kleur: 4.1.5
       magic-string: 0.30.21
@@ -8770,76 +8774,76 @@ snapshots:
       tailwindcss: 4.2.4
       vite: 8.0.10(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.2)(tsx@4.21.0)
 
-  '@temporalio/activity@1.16.1':
+  '@temporalio/activity@1.17.0':
     dependencies:
-      '@temporalio/client': 1.16.1
-      '@temporalio/common': 1.16.1
+      '@temporalio/client': 1.17.0
+      '@temporalio/common': 1.17.0
       abort-controller: 3.0.0
 
-  '@temporalio/client@1.16.1':
+  '@temporalio/client@1.17.0':
     dependencies:
       '@grpc/grpc-js': 1.14.3
-      '@temporalio/common': 1.16.1
-      '@temporalio/proto': 1.16.1
+      '@temporalio/common': 1.17.0
+      '@temporalio/proto': 1.17.0
       abort-controller: 3.0.0
       long: 5.3.2
       uuid: 11.1.1
 
-  '@temporalio/common@1.16.1':
+  '@temporalio/common@1.17.0':
     dependencies:
-      '@temporalio/proto': 1.16.1
+      '@temporalio/proto': 1.17.0
       long: 5.3.2
       ms: 3.0.0-canary.1
       nexus-rpc: 0.0.2
       proto3-json-serializer: 2.0.2
 
-  '@temporalio/core-bridge@1.16.1':
+  '@temporalio/core-bridge@1.17.0':
     dependencies:
       '@grpc/grpc-js': 1.14.3
-      '@temporalio/common': 1.16.1
+      '@temporalio/common': 1.17.0
 
-  '@temporalio/envconfig@1.16.1':
+  '@temporalio/envconfig@1.17.0':
     dependencies:
-      '@temporalio/common': 1.16.1
+      '@temporalio/common': 1.17.0
       smol-toml: 1.6.1
 
-  '@temporalio/interceptors-opentelemetry@1.16.1(@temporalio/common@1.16.1)(@temporalio/workflow@1.16.1)':
+  '@temporalio/interceptors-opentelemetry@1.17.0(@temporalio/common@1.17.0)(@temporalio/workflow@1.17.0)':
     dependencies:
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.1)
       '@opentelemetry/resources': 1.30.1(@opentelemetry/api@1.9.1)
       '@opentelemetry/sdk-trace-base': 1.30.1(@opentelemetry/api@1.9.1)
-      '@temporalio/common': 1.16.1
-      '@temporalio/plugin': 1.16.1
+      '@temporalio/common': 1.17.0
+      '@temporalio/plugin': 1.17.0
     optionalDependencies:
-      '@temporalio/workflow': 1.16.1
+      '@temporalio/workflow': 1.17.0
 
-  '@temporalio/nexus@1.16.1':
+  '@temporalio/nexus@1.17.0':
     dependencies:
-      '@temporalio/client': 1.16.1
-      '@temporalio/common': 1.16.1
-      '@temporalio/proto': 1.16.1
+      '@temporalio/client': 1.17.0
+      '@temporalio/common': 1.17.0
+      '@temporalio/proto': 1.17.0
       long: 5.3.2
       nexus-rpc: 0.0.2
 
-  '@temporalio/plugin@1.16.1': {}
+  '@temporalio/plugin@1.17.0': {}
 
-  '@temporalio/proto@1.16.1':
+  '@temporalio/proto@1.17.0':
     dependencies:
       long: 5.3.2
-      protobufjs: 7.5.6
+      protobufjs: 7.5.5
 
-  '@temporalio/worker@1.16.1(@swc/helpers@0.5.21)(tslib@2.8.1)':
+  '@temporalio/worker@1.17.0(@swc/helpers@0.5.21)(tslib@2.8.1)':
     dependencies:
       '@grpc/grpc-js': 1.14.3
       '@swc/core': 1.15.32(@swc/helpers@0.5.21)
-      '@temporalio/activity': 1.16.1
-      '@temporalio/client': 1.16.1
-      '@temporalio/common': 1.16.1
-      '@temporalio/core-bridge': 1.16.1
-      '@temporalio/nexus': 1.16.1
-      '@temporalio/proto': 1.16.1
-      '@temporalio/workflow': 1.16.1
+      '@temporalio/activity': 1.17.0
+      '@temporalio/client': 1.17.0
+      '@temporalio/common': 1.17.0
+      '@temporalio/core-bridge': 1.17.0
+      '@temporalio/nexus': 1.17.0
+      '@temporalio/proto': 1.17.0
+      '@temporalio/workflow': 1.17.0
       abort-controller: 3.0.0
       heap-js: 2.7.1
       memfs: 4.57.2(tslib@2.8.1)
@@ -8860,10 +8864,10 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@temporalio/workflow@1.16.1':
+  '@temporalio/workflow@1.17.0':
     dependencies:
-      '@temporalio/common': 1.16.1
-      '@temporalio/proto': 1.16.1
+      '@temporalio/common': 1.17.0
+      '@temporalio/proto': 1.17.0
       nexus-rpc: 0.0.2
 
   '@tsconfig/node10@1.0.12': {}
@@ -8876,22 +8880,22 @@ snapshots:
 
   '@tsconfig/node22@22.0.5': {}
 
-  '@turbo/darwin-64@2.9.6':
+  '@turbo/darwin-64@2.9.7':
     optional: true
 
-  '@turbo/darwin-arm64@2.9.6':
+  '@turbo/darwin-arm64@2.9.7':
     optional: true
 
-  '@turbo/linux-64@2.9.6':
+  '@turbo/linux-64@2.9.7':
     optional: true
 
-  '@turbo/linux-arm64@2.9.6':
+  '@turbo/linux-arm64@2.9.7':
     optional: true
 
-  '@turbo/windows-64@2.9.6':
+  '@turbo/windows-64@2.9.7':
     optional: true
 
-  '@turbo/windows-arm64@2.9.6':
+  '@turbo/windows-arm64@2.9.7':
     optional: true
 
   '@tybys/wasm-util@0.10.1':
@@ -9010,15 +9014,15 @@ snapshots:
       '@types/json-schema': 7.0.15
     optional: true
 
-  '@typescript-eslint/eslint-plugin@8.59.1(@typescript-eslint/parser@8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)':
+  '@typescript-eslint/eslint-plugin@8.59.1(@typescript-eslint/parser@8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)
+      '@typescript-eslint/parser': 8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)
       '@typescript-eslint/scope-manager': 8.59.1
-      '@typescript-eslint/type-utils': 8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)
+      '@typescript-eslint/type-utils': 8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.59.1
-      eslint: 10.2.1(jiti@2.6.1)
+      eslint: 10.3.0(jiti@2.6.1)
       ignore: 7.0.5
       natural-compare: 1.4.0
       ts-api-utils: 2.5.0(typescript@6.0.3)
@@ -9042,14 +9046,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)':
+  '@typescript-eslint/parser@8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.59.1
       '@typescript-eslint/types': 8.59.1
       '@typescript-eslint/typescript-estree': 8.59.1(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.59.1
       debug: 4.4.3(supports-color@5.5.0)
-      eslint: 10.2.1(jiti@2.6.1)
+      eslint: 10.3.0(jiti@2.6.1)
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
@@ -9102,13 +9106,13 @@ snapshots:
     dependencies:
       typescript: 6.0.3
 
-  '@typescript-eslint/type-utils@8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)':
+  '@typescript-eslint/type-utils@8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/types': 8.59.1
       '@typescript-eslint/typescript-estree': 8.59.1(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)
       debug: 4.4.3(supports-color@5.5.0)
-      eslint: 10.2.1(jiti@2.6.1)
+      eslint: 10.3.0(jiti@2.6.1)
       ts-api-utils: 2.5.0(typescript@6.0.3)
       typescript: 6.0.3
     transitivePeerDependencies:
@@ -9186,13 +9190,13 @@ snapshots:
       - supports-color
       - typescript
 
-  '@typescript-eslint/utils@8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)':
+  '@typescript-eslint/utils@8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.2.1(jiti@2.6.1))
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.3.0(jiti@2.6.1))
       '@typescript-eslint/scope-manager': 8.59.1
       '@typescript-eslint/types': 8.59.1
       '@typescript-eslint/typescript-estree': 8.59.1(typescript@6.0.3)
-      eslint: 10.2.1(jiti@2.6.1)
+      eslint: 10.3.0(jiti@2.6.1)
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
@@ -9435,7 +9439,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  baseline-browser-mapping@2.10.24: {}
+  baseline-browser-mapping@2.10.25: {}
 
   basic-auth@2.0.1:
     dependencies:
@@ -9489,9 +9493,9 @@ snapshots:
 
   browserslist@4.28.2:
     dependencies:
-      baseline-browser-mapping: 2.10.24
+      baseline-browser-mapping: 2.10.25
       caniuse-lite: 1.0.30001791
-      electron-to-chromium: 1.5.345
+      electron-to-chromium: 1.5.348
       node-releases: 2.0.38
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
 
@@ -9689,7 +9693,7 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  devalue@5.7.1: {}
+  devalue@5.8.0: {}
 
   devlop@1.1.0:
     dependencies:
@@ -9754,7 +9758,7 @@ snapshots:
       fast-check: 3.23.2
     optional: true
 
-  electron-to-chromium@1.5.345: {}
+  electron-to-chromium@1.5.348: {}
 
   emoji-regex@8.0.0: {}
 
@@ -9868,9 +9872,9 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-prettier@10.1.8(eslint@10.2.1(jiti@2.6.1)):
+  eslint-config-prettier@10.1.8(eslint@10.3.0(jiti@2.6.1)):
     dependencies:
-      eslint: 10.2.1(jiti@2.6.1)
+      eslint: 10.3.0(jiti@2.6.1)
 
   eslint-config-prettier@9.1.2(eslint@8.57.1):
     dependencies:
@@ -9888,17 +9892,17 @@ snapshots:
 
   eslint-plugin-only-warn@1.2.1: {}
 
-  eslint-plugin-svelte@3.17.1(eslint@10.2.1(jiti@2.6.1))(svelte@5.55.5(@typescript-eslint/types@8.59.1))(ts-node@10.9.2(@swc/core@1.15.32(@swc/helpers@0.5.21))(@types/node@22.19.17)(typescript@6.0.3)):
+  eslint-plugin-svelte@3.17.1(eslint@10.3.0(jiti@2.6.1))(svelte@5.55.5(@typescript-eslint/types@8.59.1))(ts-node@10.9.2(@swc/core@1.15.32(@swc/helpers@0.5.21))(@types/node@22.19.17)(typescript@6.0.3)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.2.1(jiti@2.6.1))
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.3.0(jiti@2.6.1))
       '@jridgewell/sourcemap-codec': 1.5.5
-      eslint: 10.2.1(jiti@2.6.1)
+      eslint: 10.3.0(jiti@2.6.1)
       esutils: 2.0.3
       globals: 16.5.0
       known-css-properties: 0.37.0
-      postcss: 8.5.12
-      postcss-load-config: 3.1.4(postcss@8.5.12)(ts-node@10.9.2(@swc/core@1.15.32(@swc/helpers@0.5.21))(@types/node@22.19.17)(typescript@6.0.3))
-      postcss-safe-parser: 7.0.1(postcss@8.5.12)
+      postcss: 8.5.13
+      postcss-load-config: 3.1.4(postcss@8.5.13)(ts-node@10.9.2(@swc/core@1.15.32(@swc/helpers@0.5.21))(@types/node@22.19.17)(typescript@6.0.3))
+      postcss-safe-parser: 7.0.1(postcss@8.5.13)
       semver: 7.7.4
       svelte-eslint-parser: 1.6.0(svelte@5.55.5(@typescript-eslint/types@8.59.1))
     optionalDependencies:
@@ -9906,11 +9910,11 @@ snapshots:
     transitivePeerDependencies:
       - ts-node
 
-  eslint-plugin-turbo@2.9.6(eslint@8.57.1)(turbo@2.9.6):
+  eslint-plugin-turbo@2.9.7(eslint@8.57.1)(turbo@2.9.7):
     dependencies:
       dotenv: 16.0.3
       eslint: 8.57.1
-      turbo: 2.9.6
+      turbo: 2.9.7
 
   eslint-scope@5.1.1:
     dependencies:
@@ -9940,9 +9944,9 @@ snapshots:
 
   eslint-visitor-keys@5.0.1: {}
 
-  eslint@10.2.1(jiti@2.6.1):
+  eslint@10.3.0(jiti@2.6.1):
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.2.1(jiti@2.6.1))
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.3.0(jiti@2.6.1))
       '@eslint-community/regexpp': 4.12.2
       '@eslint/config-array': 0.23.5
       '@eslint/config-helpers': 0.5.5
@@ -10748,9 +10752,9 @@ snapshots:
 
   ms@3.0.0-canary.1: {}
 
-  nanoid@3.3.11: {}
+  nanoid@3.3.12: {}
 
-  nanoid@5.1.9: {}
+  nanoid@5.1.11: {}
 
   napi-build-utils@2.0.0: {}
 
@@ -10952,21 +10956,21 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-load-config@3.1.4(postcss@8.5.12)(ts-node@10.9.2(@swc/core@1.15.32(@swc/helpers@0.5.21))(@types/node@22.19.17)(typescript@6.0.3)):
+  postcss-load-config@3.1.4(postcss@8.5.13)(ts-node@10.9.2(@swc/core@1.15.32(@swc/helpers@0.5.21))(@types/node@22.19.17)(typescript@6.0.3)):
     dependencies:
       lilconfig: 2.1.0
       yaml: 1.10.3
     optionalDependencies:
-      postcss: 8.5.12
+      postcss: 8.5.13
       ts-node: 10.9.2(@swc/core@1.15.32(@swc/helpers@0.5.21))(@types/node@22.19.17)(typescript@6.0.3)
 
-  postcss-safe-parser@7.0.1(postcss@8.5.12):
+  postcss-safe-parser@7.0.1(postcss@8.5.13):
     dependencies:
-      postcss: 8.5.12
+      postcss: 8.5.13
 
-  postcss-scss@4.0.9(postcss@8.5.12):
+  postcss-scss@4.0.9(postcss@8.5.13):
     dependencies:
-      postcss: 8.5.12
+      postcss: 8.5.13
 
   postcss-selector-parser@6.0.10:
     dependencies:
@@ -10978,9 +10982,9 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss@8.5.12:
+  postcss@8.5.13:
     dependencies:
-      nanoid: 3.3.11
+      nanoid: 3.3.12
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -11042,6 +11046,21 @@ snapshots:
   proto3-json-serializer@2.0.2:
     dependencies:
       protobufjs: 7.5.6
+
+  protobufjs@7.5.5:
+    dependencies:
+      '@protobufjs/aspromise': 1.1.2
+      '@protobufjs/base64': 1.1.2
+      '@protobufjs/codegen': 2.0.5
+      '@protobufjs/eventemitter': 1.1.0
+      '@protobufjs/fetch': 1.1.0
+      '@protobufjs/float': 1.0.2
+      '@protobufjs/inquire': 1.1.1
+      '@protobufjs/path': 1.1.2
+      '@protobufjs/pool': 1.1.0
+      '@protobufjs/utf8': 1.1.1
+      '@types/node': 22.19.17
+      long: 5.3.2
 
   protobufjs@7.5.6:
     dependencies:
@@ -11302,7 +11321,7 @@ snapshots:
     dependencies:
       commander: 14.0.3
       node-fetch-native: 1.6.7
-      postcss: 8.5.12
+      postcss: 8.5.13
       svelte: 5.55.5(@typescript-eslint/types@8.59.1)
       tailwind-merge: 3.5.0
 
@@ -11426,7 +11445,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-check@4.4.6(picomatch@4.0.4)(svelte@5.55.5(@typescript-eslint/types@8.59.1))(typescript@6.0.3):
+  svelte-check@4.4.7(picomatch@4.0.4)(svelte@5.55.5(@typescript-eslint/types@8.59.1))(typescript@6.0.3):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       chokidar: 4.0.3
@@ -11443,8 +11462,8 @@ snapshots:
       eslint-scope: 8.4.0
       eslint-visitor-keys: 4.2.1
       espree: 10.4.0
-      postcss: 8.5.12
-      postcss-scss: 4.0.9(postcss@8.5.12)
+      postcss: 8.5.13
+      postcss-scss: 4.0.9(postcss@8.5.13)
       postcss-selector-parser: 7.1.1
       semver: 7.7.4
     optionalDependencies:
@@ -11488,7 +11507,7 @@ snapshots:
       aria-query: 5.3.1
       axobject-query: 4.1.0
       clsx: 2.1.1
-      devalue: 5.7.1
+      devalue: 5.8.0
       esm-env: 1.2.2
       esrap: 2.2.5(@typescript-eslint/types@8.59.1)
       is-reference: 3.0.3
@@ -11501,7 +11520,7 @@ snapshots:
   sveltekit-superforms@2.30.1(@sveltejs/kit@2.58.0(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.5(@typescript-eslint/types@8.59.1))(vite@8.0.10(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.2)(tsx@4.21.0)))(svelte@5.55.5(@typescript-eslint/types@8.59.1))(typescript@6.0.3)(vite@8.0.10(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.2)(tsx@4.21.0)))(@types/json-schema@7.0.15)(svelte@5.55.5(@typescript-eslint/types@8.59.1))(typescript@6.0.3):
     dependencies:
       '@sveltejs/kit': 2.58.0(@opentelemetry/api@1.9.1)(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.55.5(@typescript-eslint/types@8.59.1))(vite@8.0.10(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.2)(tsx@4.21.0)))(svelte@5.55.5(@typescript-eslint/types@8.59.1))(typescript@6.0.3)(vite@8.0.10(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.2)(tsx@4.21.0))
-      devalue: 5.7.1
+      devalue: 5.8.0
       memoize-weak: 1.0.2
       svelte: 5.55.5(@typescript-eslint/types@8.59.1)
       ts-deepmerge: 7.0.3
@@ -11517,7 +11536,7 @@ snapshots:
       joi: 17.13.3
       json-schema-to-ts: 3.1.1
       superstruct: 2.0.2
-      typebox: 1.1.35
+      typebox: 1.1.37
       valibot: 1.3.1(typescript@6.0.3)
       yup: 1.7.1
       zod: 4.4.1
@@ -11728,14 +11747,14 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  turbo@2.9.6:
+  turbo@2.9.7:
     optionalDependencies:
-      '@turbo/darwin-64': 2.9.6
-      '@turbo/darwin-arm64': 2.9.6
-      '@turbo/linux-64': 2.9.6
-      '@turbo/linux-arm64': 2.9.6
-      '@turbo/windows-64': 2.9.6
-      '@turbo/windows-arm64': 2.9.6
+      '@turbo/darwin-64': 2.9.7
+      '@turbo/darwin-arm64': 2.9.7
+      '@turbo/linux-64': 2.9.7
+      '@turbo/linux-arm64': 2.9.7
+      '@turbo/windows-64': 2.9.7
+      '@turbo/windows-arm64': 2.9.7
 
   tw-animate-css@1.4.0: {}
 
@@ -11748,16 +11767,16 @@ snapshots:
   type-fest@2.19.0:
     optional: true
 
-  typebox@1.1.35:
+  typebox@1.1.37:
     optional: true
 
-  typescript-eslint@8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3):
+  typescript-eslint@8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.59.1(@typescript-eslint/parser@8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)
-      '@typescript-eslint/parser': 8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)
+      '@typescript-eslint/eslint-plugin': 8.59.1(@typescript-eslint/parser@8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)
+      '@typescript-eslint/parser': 8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)
       '@typescript-eslint/typescript-estree': 8.59.1(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.59.1(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)
-      eslint: 10.2.1(jiti@2.6.1)
+      '@typescript-eslint/utils': 8.59.1(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)
+      eslint: 10.3.0(jiti@2.6.1)
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
@@ -11872,7 +11891,7 @@ snapshots:
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
-      postcss: 8.5.12
+      postcss: 8.5.13
       rolldown: 1.0.0-rc.17
       tinyglobby: 0.2.16
     optionalDependencies:

@@ -6,7 +6,6 @@ export const getStatus = query(async() => {
   try {
     const client = await getClient();
     const result = await client.withDeadline(Date.now() + 100, () => client.connection.workflowService.getSystemInfo({}));
-    console.log(result);
     await client.connection.close();
     return true;
   } catch(e) {

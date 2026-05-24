@@ -1,3 +1,4 @@
+<!--Blocks Sidebar-07-->
 <script lang="ts" module>
 	import BookOpenIcon from "@lucide/svelte/icons/book-open";
 	import BotIcon from "@lucide/svelte/icons/bot";
@@ -169,11 +170,15 @@
 		</Sidebar.Menu>
 	</Sidebar.Header>
 	<Sidebar.Content>
+    <!--
 		<NavMain items={data.navMain} />
 		<NavProjects projects={data.projects} />
 		<NavSecondary items={data.navSecondary} class="mt-auto" />
+    -->
 	</Sidebar.Content>
 	<Sidebar.Footer>
+    <!--
 		<NavUser user={data.user} />
+    -->
 	</Sidebar.Footer>
 </Sidebar.Root>
