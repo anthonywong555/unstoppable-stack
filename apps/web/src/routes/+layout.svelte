@@ -5,7 +5,7 @@
 	import { ModeWatcher } from "mode-watcher";
 	import type { LayoutProps } from './$types';
 	import AppSidebar from "$lib/components/layout/app-sidebar.svelte";
-	import Settings from "$lib/components/layout/nav-settings.svelte";
+	import Settings from "$lib/components/settings/nav-settings.svelte";
 	import * as Breadcrumb from "$lib/components/ui/breadcrumb/index.js";
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 
