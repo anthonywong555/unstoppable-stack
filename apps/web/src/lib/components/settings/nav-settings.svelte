@@ -86,22 +86,51 @@
     <Drawer.Description>Show status of your connected services.</Drawer.Description>
    </Drawer.Header>
     <Table.Root>
-      <Table.Caption></Table.Caption>
-      <Table.Header>
-        <Table.Row>
+    <Table.Caption></Table.Caption>
+    <Table.Header>
+      <Table.Row>
         <Table.Head>Services</Table.Head>
         <Table.Head>Status</Table.Head>
         <Table.Head>Actions</Table.Head>
-        </Table.Row>
-      </Table.Header>
-      <Table.Body>
-        <Table.Row>
-        <Table.Cell class="font-medium">INV001</Table.Cell>
-        <Table.Cell>Paid</Table.Cell>
-        <Table.Cell>Credit Card</Table.Cell>
-        </Table.Row>
-      </Table.Body>
-      </Table.Root>
+      </Table.Row>
+    </Table.Header>
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell class="font-medium">Durable Execution</Table.Cell>
+        <Table.Cell>
+          {#if query.error}
+            <Badge variant="destructive">Offline</Badge>
+          {:else if query.loading}
+            <Badge><Spinner />Loading</Badge>
+          {:else if query.current == true}
+            <Badge variant="secondary" class="bg-green-500">Online</Badge>
+          {:else}
+            <Badge variant="destructive">Offline</Badge>
+          {/if}
+        </Table.Cell>
+        <Table.Cell>
+          <Button variant="outline">Dashboard</Button>
+        </Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell class="font-medium">Sync Engine</Table.Cell>
+        <Table.Cell>
+          <Badge variant="destructive">Offline</Badge>
+        </Table.Cell>
+        <Table.Cell>
+        </Table.Cell>
+      </Table.Row>
+            <Table.Row>
+        <Table.Cell class="font-medium">Database</Table.Cell>
+        <Table.Cell>
+          <Badge variant="secondary" class="bg-green-500">Online</Badge>
+        </Table.Cell>
+        <Table.Cell>
+          <Button variant="destructive">Reset</Button>
+        </Table.Cell>
+      </Table.Row>
+    </Table.Body>
+    </Table.Root>
   </Drawer.Content>
  </Drawer.Root>
 {/if}
